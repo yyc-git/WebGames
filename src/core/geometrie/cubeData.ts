@@ -7,14 +7,14 @@ let vertices :Float32Array = new Float32Array([   // Vertex coordinates
     1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0   //
 ]);
 
-let colors :Float32Array = new Float32Array([     // Colors
-    1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,     // v0-v1-v2-v3 front
-    1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,     // v0-v3-v4-v5 right
-    1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,     // v0-v5-v6-v1 up
-    1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,     // v1-v6-v7-v2 left
-    1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,     // v7-v4-v3-v2 down
-    1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0
-]);
+// let colors :Float32Array = new Float32Array([     // Colors
+//     1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,     // v0-v1-v2-v3 front
+//     1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,     // v0-v3-v4-v5 right
+//     1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,     // v0-v5-v6-v1 up
+//     1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,     // v1-v6-v7-v2 left
+//     1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,     // v7-v4-v3-v2 down
+//     1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0
+// ]);
 
 let normals :Float32Array = new Float32Array([    // Normal
     0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0,  // v0-v1-v2-v3 front
@@ -36,7 +36,7 @@ let indices :Uint8Array = new Uint8Array([       // Indices of the vertices
 
 let cubeData = {
     vertices,
-    colors,
+    // colors,
     normals,
     indices
 };

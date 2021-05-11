@@ -94,7 +94,7 @@ function loadShader(gl: any, type: any, source: any) {
     return shader;
 }
 
-let initVertexBuffers = (gl: any, cubeData: any) => {
+let initVertexBuffers = (gl: WebGLRenderingContext, cubeData: any) => {
     // 创建顶点颜色 与 索引 缓冲区
     let indexBuffer = gl.createBuffer();
 
@@ -102,9 +102,9 @@ let initVertexBuffers = (gl: any, cubeData: any) => {
         return -1;
     }
 
-    if (!initArrayBuffer(gl, cubeData.colors, 3, gl.FLOAT, 'a_Color')) {
-        return -1;
-    }
+    // if (!initArrayBuffer(gl, cubeData.colors, 3, gl.FLOAT, 'a_Color')) {
+    //     return -1;
+    // }
 
     if (!initArrayBuffer(gl, cubeData.normals, 3, gl.FLOAT, 'a_Normal')) {
         return -1;
