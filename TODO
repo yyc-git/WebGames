@@ -1,4 +1,0 @@
-TODO: Indices data type set Uint32Array drawing unable display
-Result: use gl.getExtension("OES_element_index_uint")。 add uint support
-
-TODO: TSM and cuon-Matrix.js of the perspective matrix method achieve different 『 whose method is correct ？
